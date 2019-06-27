@@ -20,7 +20,10 @@ Released   : 20140330
 <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-	
+<script>
+	window.addListener("load", function () {
+		Array.from(document.getElementById("menu").children[0].children).find(x => x.firstChild.href === window.location.href).classList.add("active");
+	});
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -30,20 +33,19 @@ Released   : 20140330
 	
 <div id="header-wrapper">
 	<div id="header" class="container">
-		<p>This is some text. <img src="Watxrfinal.png" alt="logo" align="left"> This is some text.</p>
-		<!-- <left><a href="index.html"><img src="Watxrfinal.png" alt="Logo" style="width:150px;height:100px;"></a></left> -->
+		
+		<left><a href="index.html"><img src="Watxrfinal.png" alt="Logo" style="width:400px;height:300px;"></a></left>
 		
 		</div>
 		<div id="menu">
-			<ul>
-				<center>
-				<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+			<center><ul>
+				<li><a href="#" accesskey="1" title="">Homepage</a></li>
 				<li><a href="#" accesskey="2" title="">General Information</a></li>
 				<li><a href="Data.html" accesskey="3" title="">Creek Information</a></li>
 				<li><a href="#" accesskey="4" title="">Water Safety</a></li>
 				<li><a href="#" accesskey="5" title="">And this</a></li>
-				</center>
-			</ul>
+				</ul>
+			</center>
 		</div>
 	</div>
 	<div id="banner" class="container">
