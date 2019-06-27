@@ -534,29 +534,4 @@
 		color: rgba(0,0,0,.5);
 	}
 
-	#nav 
-	{
-		margin:0;
-		padding:0;
-		background:#808259
-		float: left;
-		width: 100%;
-	}
 	
-	#nav li
-	{
-		display:block;
-		padding:0;
-		margin:0;
-	}
-	
-	#nav a:link,
-
-	#nav a:visited
-	{
-		color:#000;
-		background:#b2b580;
-		padding: 20px 40px 4px 10 px;
-		float:left;
-		width:auto;
-	}
